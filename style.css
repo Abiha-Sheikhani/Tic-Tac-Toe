@@ -1,0 +1,37 @@
+body{
+background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+color: #FFF8B0
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+font-family: "Permanent Marker", cursive;
+font-weight: 100;
+
+}
+
+.game{
+    display: flex;
+    border: 2px solid maroon;
+    
+}
+.game-cell{
+    height: 100px;
+    width: 100px;
+    border: 2px solid maroon;
+    font-size: 80px;
+    text-align: center;
+   padding-bottom: 10px;
+}
+#restart{
+    padding: 15px 35px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  background-color: rgb(68, 100, 158);
+  border: none;
+  border-radius: 10px;
+  color: White;
+}
