@@ -1,7 +1,17 @@
 body{
-background: #833AB4;
-background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+      background: linear-gradient(270deg, #833AB4, #FD1D1D, #FCB045);
+  background-size: 600% 600%;
+  animation: bgAnimation 15s ease infinite;
+
+/* background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); */
 color: #FFF8B0
+}
+
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .wrapper{
     display: flex;
@@ -11,6 +21,9 @@ color: #FFF8B0
 font-family: "Permanent Marker", cursive;
 font-weight: 100;
 
+}
+.game {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .game{
@@ -25,8 +38,15 @@ font-weight: 100;
     font-size: 80px;
     text-align: center;
    padding-bottom: 10px;
+       cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+.game-cell:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 #restart{
+    margin-top: 30px;
     padding: 15px 35px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: larger;
@@ -34,4 +54,21 @@ font-weight: 100;
   border: none;
   border-radius: 10px;
   color: White;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+#restart:hover {
+    background-color: rgb(58, 90, 138);
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+#restart:active {
+    transform: scale(0.98);
+}
+#result{
+     font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 3px #000;
 }
